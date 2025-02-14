@@ -8,8 +8,6 @@ A collection of useful classes and extensions so obvious you'll wonder why they 
 
 ## Installation 💻
 
-**❗ In order to start using Obvious you must have the [Flutter SDK][flutter_install_link] installed on your machine.**
-
 Install via `flutter pub add`:
 
 ```sh
