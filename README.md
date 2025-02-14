@@ -16,13 +16,12 @@ Install via `flutter pub add`:
 dart pub add obvious
 ```
 
----
 
 ## What's the point of this?
 
-After years of copy-n-pasting of the same constructor param values and other tedious actions as Flutter developers, it was time to package these actions into sensible, almost *obvious* classes and extensions we can all benefit from.
+After years of copy-n-pasting the same constructor param values and other tedious actions as Flutter developers, it was time to package these actions into sensible, almost *obvious* classes and extensions we can all benefit from.
 
-The easiest example (and my favorite) is needing to pass all but *__one__* argument for `EdgeInsets.only` to the same value.  
+The easiest example (and my favorite) is needing to set all but *__one__* argument for `EdgeInsets.only` to the same value.  
 
 That's when `ObviousEdgeInsets.except()` was born:
 
