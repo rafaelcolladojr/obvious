@@ -53,3 +53,171 @@ class ObviousEdgeInsets extends EdgeInsets {
     return valid;
   }
 }
+
+/// A [num] extension that provides a easy-to-access
+/// shorthand for creating padding EdgeInsets
+extension ObviousNumEdgeInsets on num {
+  /// Returns an [EdgeInsets.all] using this [num]
+  /// this getter was called from.
+  ///
+  /// {@tool snippet}
+  ///
+  /// example:
+  /// ```dart
+  /// 12.paddingAll
+  /// ```
+  ///
+  /// is synonimous with:
+  ///
+  /// ```dart
+  /// EdgeInsets.all(12)
+  /// ```
+  ///
+  /// {@end-tool}
+  /// If more than one is provided, an [AssertionError] is thrown.
+  EdgeInsets get paddingAll => EdgeInsets.all(toDouble());
+
+  /// Returns an [EdgeInsets.symmetric] using this [num]
+  /// this getter was called from as its *horizontal* argument.
+  ///
+  /// {@tool snippet}
+  ///
+  /// example:
+  /// ```dart
+  /// 12.paddingHorizontal
+  /// ```
+  ///
+  /// is synonimous with:
+  ///
+  /// ```dart
+  /// EdgeInsets.symmetric(horizontal: 12)
+  /// ```
+  ///
+  /// {@end-tool}
+  /// If more than one is provided, an [AssertionError] is thrown.
+  EdgeInsets get paddingHorizontal =>
+      EdgeInsets.symmetric(horizontal: toDouble());
+
+  /// Returns an [EdgeInsets.symmetric] using this [num]
+  /// this getter was called from as its *vertical* argument.
+  ///
+  /// {@tool snippet}
+  ///
+  /// example:
+  /// ```dart
+  /// 12.paddingVertical
+  /// ```
+  ///
+  /// is synonimous with:
+  ///
+  /// ```dart
+  /// EdgeInsets.symmetric(vertical: 12)
+  /// ```
+  ///
+  /// {@end-tool}
+  /// If more than one is provided, an [AssertionError] is thrown.
+  EdgeInsets get paddingVertical => EdgeInsets.symmetric(vertical: toDouble());
+
+  /// Returns an [EdgeInsets.only] using this [num]
+  /// this getter was called from as its *top* argument.
+  ///
+  /// {@tool snippet}
+  ///
+  /// example:
+  /// ```dart
+  /// 12.paddingTop
+  /// ```
+  ///
+  /// is synonimous with:
+  ///
+  /// ```dart
+  /// EdgeInsets.only(top: 12)
+  /// ```
+  ///
+  /// {@end-tool}
+  /// If more than one is provided, an [AssertionError] is thrown.
+  EdgeInsets get paddingTop => EdgeInsets.only(top: toDouble());
+
+  /// Returns an [EdgeInsets.only] using this [num]
+  /// this getter was called from as its *left* argument.
+  ///
+  /// {@tool snippet}
+  ///
+  /// example:
+  /// ```dart
+  /// 12.paddingLeft
+  /// ```
+  ///
+  /// is synonimous with:
+  ///
+  /// ```dart
+  /// EdgeInsets.only(left: 12)
+  /// ```
+  ///
+  /// {@end-tool}
+  /// If more than one is provided, an [AssertionError] is thrown.
+  EdgeInsets get paddingLeft => EdgeInsets.only(left: toDouble());
+
+  /// Returns an [EdgeInsets.only] using this [num]
+  /// this getter was called from as its *bottom* argument.
+  ///
+  /// {@tool snippet}
+  ///
+  /// example:
+  /// ```dart
+  /// 12.paddingBottom
+  /// ```
+  ///
+  /// is synonimous with:
+  ///
+  /// ```dart
+  /// EdgeInsets.only(bottom: 12)
+  /// ```
+  ///
+  /// {@end-tool}
+  /// If more than one is provided, an [AssertionError] is thrown.
+  EdgeInsets get paddingBottom => EdgeInsets.only(bottom: toDouble());
+
+  /// Returns an [EdgeInsets.only] using this [num]
+  /// this getter was called from as its *right* argument.
+  ///
+  /// {@tool snippet}
+  ///
+  /// example:
+  /// ```dart
+  /// 12.paddingRight
+  /// ```
+  ///
+  /// is synonimous with:
+  ///
+  /// ```dart
+  /// EdgeInsets.only(right: 12)
+  /// ```
+  ///
+  /// {@end-tool}
+  /// If more than one is provided, an [AssertionError] is thrown.
+  EdgeInsets get paddingRight => EdgeInsets.only(right: toDouble());
+
+  /// Returns an [EdgeInsets.only] using this [num]
+  /// this getter was called from as all its arguments *except top*.
+  /// See [ObviousEdgeInsets.except] for more details
+  EdgeInsets get paddingExceptTop => ObviousEdgeInsets.except(top: toDouble());
+
+  /// Returns an [EdgeInsets.only] using this [num]
+  /// this getter was called from as all its arguments *except left*.
+  /// See [ObviousEdgeInsets.except] for more details
+  EdgeInsets get paddingExceptLeft =>
+      ObviousEdgeInsets.except(left: toDouble());
+
+  /// Returns an [EdgeInsets.only] using this [num]
+  /// this getter was called from as all its arguments *except bottom*.
+  /// See [ObviousEdgeInsets.except] for more details
+  EdgeInsets get paddingExceptBottom =>
+      ObviousEdgeInsets.except(bottom: toDouble());
+
+  /// Returns an [EdgeInsets.only] using this [num]
+  /// this getter was called from as all its arguments *except right*.
+  /// See [ObviousEdgeInsets.except] for more details
+  EdgeInsets get paddingExceptRight =>
+      ObviousEdgeInsets.except(right: toDouble());
+}
