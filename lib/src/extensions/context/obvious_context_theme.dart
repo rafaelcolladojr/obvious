@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart' show Theme, ThemeData;
-import 'package:flutter/widgets.dart' show BuildContext;
+import 'package:flutter/material.dart' show BuildContext, Theme, ThemeData;
 
 /// Extension methods on [BuildContext] that provides
 /// various material theme convenience methods.
