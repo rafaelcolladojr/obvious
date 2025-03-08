@@ -31,6 +31,60 @@ ObviousEdgeInsets.except(bottom: 8)
 EdgeInsets.only(left: 8, top: 8, right: 8)
 ```
 
+## Features
+
+### Clases
+- `ObviousEdgeInsets`
+- `ObviousConditionalExpanded`
+
+### Extensions
+#### num -> EdgeInsets
+- `insetAll`
+- `insetHorizontal`
+- `insetVertical`
+- `insetLeft`
+- `insetTop`
+- `insetBottom`
+- `insetRight`
+
+#### num -> Duration
+- `ms`
+- `seconds`
+- `minutes`
+- `hours`
+- `days`
+
+#### num -> SizedBox
+- `heightBox`
+- `widthBox`
+
+#### BuildContext  -> MediaQuery.sizeOf
+- `screenHeight`
+- `screenWidth`
+- `aspectRatio`
+- `isMobile`
+- `padding`
+- `viewPadding`
+- `viewInsets`
+- `isTablet`
+- `isDesktop`
+
+#### BuildContext -> Navigator
+- `push`
+- `pushReplacement`
+- `pushAndRemoveUntil`
+- `pushNamed`
+- `pushReplacementNamed`
+- `pushNamedAndRemoveUntil`
+- `pop`
+- `maybePop`
+- `popAndPushNamed`
+
+#### BuildContext -> Dialogs
+- `showNewDialog`
+- `showSnackbar`
+
+
 [flutter_install_link]: https://docs.flutter.dev/get-started/install
 [github_actions_link]: https://docs.github.com/en/actions/learn-github-actions
 [license_badge]: https://img.shields.io/badge/license-MIT-blue.svg
