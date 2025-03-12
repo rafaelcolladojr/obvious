@@ -34,7 +34,7 @@ EdgeInsets.only(left: 8, top: 8, right: 8)
 ## Features
 
 ### Clases
-- `ObviousEdgeInsets`
+- `ObviousEdgeInsets.except`
 - `ObviousConditionalExpanded`
 
 ### Extensions
@@ -83,6 +83,13 @@ EdgeInsets.only(left: 8, top: 8, right: 8)
 #### BuildContext -> Dialogs
 - `showNewDialog`
 - `showSnackbar`
+
+## Inspiration / Special thanks
+
+This project was heavily inspired by other libraries like:
+
+- [flutter_animate](https://pub.dev/packages/flutter_animate) (num to Duration)
+- [super_extensions](https://github.com/AbhishekDoshi26/super_extensions) (BuildContext to Navigator)
 
 
 [flutter_install_link]: https://docs.flutter.dev/get-started/install
