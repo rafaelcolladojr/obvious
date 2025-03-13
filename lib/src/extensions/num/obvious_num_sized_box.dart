@@ -1,7 +1,8 @@
 import 'package:flutter/widgets.dart' show SizedBox;
 
-///
-extension ObviousNumExtension on num {
+/// A [num] extension that provides a easy-to-access
+/// shorthand for creating SizedBoxes
+extension ObviousNumSizedBoxExtension on num {
   /// Returns an [SizedBox] using the [num]
   /// this getter was called from as its *height* argument.
   ///
